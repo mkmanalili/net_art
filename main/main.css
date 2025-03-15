@@ -166,10 +166,83 @@ h2:hover{
 }
 
 .sinjin_ps{
+    position:relative;
+    margin-top: 10px;
     scale:50%;
 }
 .firegirl{
     scale:40%;
     margin-left:35%;
+    margin-bottom: 0%;
     transform:rotate(-25%);
+}
+
+.sun{
+    scale:300%;
+    position:relative;
+    width:auto;
+    animation: floatAnimation 10s ease-in-out infinite;
+    transform:rotate(25deg);
+}
+    @keyframes floatAnimation {
+        0% {
+            top: 10%;
+            left: 10%;
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        25% {
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(15deg);
+        }
+        50% {
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%, -50%) rotate(30deg);
+        }
+        75% {
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+        100% {
+            top: 10%;
+            left: 10%;
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+}
+.slushynoobz{
+    scale:50%;
+    transform: rotate(25deg);
+    margin-left:300px;
+}
+.harry{
+    opacity: 10%;
+}
+.harry:hover{
+    opacity: 50%;
+}
+.bananas{
+    scale:800%;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    margin-left: 40%; 
+    animation: GFG 5s infinite linear; 
+} 
+
+@keyframes GFG { 
+    0% { 
+        transform: rotate(0deg)  
+              translateY(100px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(360deg)  
+              translateY(100px) rotate(-360deg); 
+    }
+}
+.pickles{
+    scale:15%;
+
 }
